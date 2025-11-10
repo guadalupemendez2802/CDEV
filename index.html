@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nebulosa Interactiva 3D - Exploración Espacial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Menú Inicial -->
+    <div id="start-menu" class="start-menu">
+      <div class="start-menu-content">
+        <h1 class="start-title">Nebulosa Interactiva</h1>
+        <p class="start-welcome">Bienvenido a la experiencia</p>
+        <p class="start-description">
+          Explora un universo lleno de misterios. Descubre cosas interesantes en
+          esta aventura espacial única.
+        </p>
+        <button id="start-button" class="start-button">
+          Ingresar a la Nebulosa
+        </button>
+      </div>
+    </div>
+
+    <!-- Overlay de descripción -->
+    <div id="description-overlay" class="description-overlay hidden">
+      <div class="description-content">
+        <h2 id="object-title"></h2>
+        <p id="object-description"></p>
+        <button id="close-description">Cerrar</button>
+      </div>
+    </div>
+
+    <!-- Instrucciones -->
+    <div class="instructions hidden">
+      <p>
+        🖱️ Mouse: Rotar cámara | ⌨️ Flechas: Moverse | 🖱️ Click: Explorar
+        objetos
+      </p>
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.158.0/examples/jsm/"
+        }
+      }
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
